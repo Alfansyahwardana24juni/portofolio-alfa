@@ -83,69 +83,54 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fad-up">
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+      <div class="container mx-auto px-6 max-w-7xl">
 
-        <div class="section-title" style="text-align: left;">
-          <h2 class="text-center">Temukan Tentang Saya</h2>
-          <p>Selamat datang di Portofolio Alva — tempat di mana teknologi dan kreativitas bersatu untuk menciptakan
-            pengalaman digital yang luar biasa.
-
-            Saya adalah seorang Fullstack Web Developer dengan fokus utama pada Backend Development menggunakan Laravel.
-            Saya terbiasa membangun sistem yang rapi, efisien, dan scalable, serta memahami perancangan ERD (Entity
-            Relationship Diagram) sebagai fondasi dari struktur database yang solid.
-
-            Di sisi Frontend, saya terbiasa menggunakan HTML, Tailwind CSS, dan Bootstrap untuk membangun antarmuka yang
-            responsif dan menarik.
-
-            Meskipun saya masih terus belajar, saya juga memiliki dasar pengetahuan dalam UI/UX design, yang membantu
-            saya dalam menciptakan tampilan yang tidak hanya cantik, tapi juga user-friendly.
-
-            Saya selalu antusias untuk bergabung dalam proyek-proyek menantang yang memadukan desain estetika dan
-            kekuatan pengembangan web yang matang..</p>
+        <!-- Judul -->
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight">
+            <span class="text-pink-600">Halo,</span> Saya Alva
+          </h2>
+          <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+            Seorang Fullstack Web Developer yang menyukai kombinasi antara desain visual & struktur backend yang kuat.
+          </p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profil.jpg" class="img-fluid pt-90" alt="Foto Profil" width="350px" height="350px"
-              style="border-radius: 20px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+
+          <!-- Foto -->
+          <div class="md:col-span-5">
+
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Fullstack Developer | Laravel Backend &amp; Frontend dengan Sentuhan UI/UX</h3>
 
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Tanggal Lahir:</strong> <span>24 Juni 2007</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Situs Web:</strong>
-                    <span>https://portofolio-alfa.vercel.app</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Telepon:</strong> <span>62 85161018507</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Kota:</strong> <span>Indonesia, Sulawesi</span></li>
-                </ul>
-              </div>
+          <!-- Deskripsi + Info -->
+          <div class="md:col-span-7 space-y-6">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Saya adalah seorang <strong class="text-pink-600">Fullstack Developer</strong> yang terbiasa bekerja
+              dengan Laravel di sisi backend, dan Tailwind CSS untuk frontend. Saya mengedepankan <strong>efisiensi,
+                performa, dan estetika</strong> dalam setiap proyek.
+            </p>
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Dengan dasar di bidang UI/UX, saya juga memperhatikan pengalaman pengguna dalam membangun sistem — mulai
+              dari sistem sederhana, dashboard admin, hingga landing page bisnis.
+            </p>
 
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Usia:</strong> <span>17</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Pendidikan:</strong> <span>SMK</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                    <span>alfansyahwardhana@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Tersedia</span></li>
-                </ul>
-              </div>
-
+            <!-- Grid Informasi -->
+            <div class="grid sm:grid-cols-2 gap-4">
+              <x-info label="Tanggal Lahir" value="24 Juni 2007" />
+              <x-info label="Usia" value="17" />
+              <x-info label="Email" value="alfansyahwardhana@gmail.com" />
+              <x-info label="Telepon" value="+62 85161018507" />
+              <x-info label="Website" value="https://portofolio-alfa.vercel.app" link />
+              <x-info label="Kota" value="Indonesia, Sulawesi" />
+              <x-info label="Pendidikan" value="SMK" />
+              <x-info label="Freelance" value="Tersedia" />
             </div>
           </div>
-
         </div>
       </div>
+    </section>
 
-      </div>
-    </section><!-- End About Section -->
 
     <!-- ======= Facts Section ======= -->
     <section id="facts" class="facts">
