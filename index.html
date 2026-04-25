@@ -5,9 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portofolio Alfansyah Wardhana </title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Alfansyah Wardhana — Fullstack Developer</title>
+  <meta name="description"
+    content="Portfolio Alfansyah Wardhana, Fullstack Developer berbasis di Makassar, Sulawesi Selatan. Spesialisasi Laravel, PHP, UI/UX Design.">
+  <meta name="keywords" content="fullstack developer, laravel, php, portfolio, makassar, web developer">
+  <meta property="og:title" content="Alfansyah Wardhana — Fullstack Developer">
+  <meta property="og:description"
+    content="Portfolio Alfansyah Wardhana, Fullstack Developer spesialisasi Laravel & UI/UX.">
+  <meta property="og:type" content="website">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -38,6 +43,7 @@
   ======================================================== -->
 </head>
 
+
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
@@ -51,6 +57,10 @@
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Beranda</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Tentang</span></a></li>
         <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-tools"></i><span>Keterampilan</span></a></li>
+        <li><a href="#techstack" class="nav-link scrollto"><i class="bx bx-code-alt"></i><span>Tech Stack</span></a>
+        </li>
+        <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i><span>Pengalaman</span></a>
+        </li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
         </li>
         <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Layanan</span></a></li>
@@ -60,71 +70,96 @@
 
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Alfansyah Wardhana</h1>
-      <p>I'm <span class="typed" data-typed-items="Developer,Designer, Freelancer,"></span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/alfa-alfansyah-wardana-8953a02a9/" class="linkedin" target="_blank"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="#" class="facebook">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://www.instagram.com/alvansyahwardhana_/" class="instagram" target="_blank"><i
-            class="bx bxl-instagram"></i></a>
-        <a href="https://wa.me/6285161018507" class="whatsapp" target="_blank">
-          <i class="bx bxl-whatsapp"></i>
-        </a>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <section id="hero" class="hero-section">
+    <!-- Particles -->
+    <div class="hero-particles">
+      <div class="particle p-1"></div>
+      <div class="particle p-2"></div>
+      <div class="particle p-3"></div>
+      <div class="particle p-4"></div>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- TEXT (kiri) -->
+        <div class="col-lg-6">
+          <div class="hero-glass">
+            <div class="hero-badge"><span></span> Open to Work &amp; Freelance</div>
+            <h1 class="hero-title"><span class="accent">Alfansyah</span> Wardhana</h1>
+            <p class="hero-subtitle" id="typed-subtitle"></p>
+            <p class="hero-desc">Fullstack Developer berbasis di Makassar, berpengalaman membangun web app dengan
+              Laravel &amp; PHP, serta UI/UX yang intuitif.</p>
+            <div class="hero-buttons">
+              <a href="#portfolio" class="btn-main"><i class="bx bx-folder-open"></i> Lihat Portfolio</a>
+              <a href="#contact" class="btn-outline"><i class="bx bx-envelope"></i> Hubungi Saya</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOTO (kanan) -->
+        <div class="col-lg-6 hero-img-col">
+          <div class="hero-img-wrap">
+            <div class="hero-img-ring"></div>
+            <div class="hero-img-ring hero-img-ring-2"></div>
+            <img src="fotoku.png" class="hero-img" alt="Foto Alfansyah Wardhana" />
+            <!-- Floating stat badges -->
+            <div class="hero-stat hero-stat-1" data-aos="fade-right" data-aos-delay="400">
+              <i class="bx bx-code-alt"></i>
+              <div><span>6+</span><small>Proyek Selesai</small></div>
+            </div>
+            <div class="hero-stat hero-stat-2" data-aos="fade-left" data-aos-delay="500">
+              <i class="bx bxl-laravel"></i>
+              <div><span>Laravel</span><small>Backend Utama</small></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section><!-- End Hero -->
-
+  </section>
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="py-24 bg-white relative overflow-hidden">
-      <div class="container mx-auto px-6 max-w-7xl">
-
-        <!-- Judul -->
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-extrabold text-gray-900 tracking-tight">
-            <span class="text-pink-600">Halo,</span> Saya Alva
-          </h2>
-          <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Seorang Fullstack Web Developer yang menyukai kombinasi antara desain visual & struktur backend yang kuat.
-          </p>
+    <section id="about" class="section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Tentang Saya</h2>
+          <p>Kenali lebih dekat siapa Alfansyah Wardhana</p>
         </div>
-
-        <div class="grid md:grid-cols-12 gap-12 items-center">
-
-          <!-- Foto -->
-          <div class="md:col-span-5">
-
+        <div class="row align-items-center g-4">
+          <div class="col-lg-4 text-center">
+            <img src="fotoku.png" class="about-img" alt="Alfansyah Wardhana" />
           </div>
-
-          <!-- Deskripsi + Info -->
-          <div class="md:col-span-7 space-y-6">
-            <p class="text-gray-700 text-lg leading-relaxed">
-              Saya adalah seorang <strong class="text-pink-600">Fullstack Developer</strong> yang terbiasa bekerja
-              dengan Laravel di sisi backend, dan Tailwind CSS untuk frontend. Saya mengedepankan <strong>efisiensi,
-                performa, dan estetika</strong> dalam setiap proyek.
-            </p>
-            <p class="text-gray-700 text-lg leading-relaxed">
-              Dengan dasar di bidang UI/UX, saya juga memperhatikan pengalaman pengguna dalam membangun sistem — mulai
-              dari sistem sederhana, dashboard admin, hingga landing page bisnis.
-            </p>
-
-            <!-- Grid Informasi -->
-            <div class="grid sm:grid-cols-2 gap-4">
-              <x-info label="Tanggal Lahir" value="24 Juni 2007" />
-              <x-info label="Usia" value="17" />
-              <x-info label="Email" value="alfansyahwardhana@gmail.com" />
-              <x-info label="Telepon" value="+62 85161018507" />
-              <x-info label="Website" value="https://portofolio-alfa.vercel.app" link />
-              <x-info label="Kota" value="Indonesia, Sulawesi" />
-              <x-info label="Pendidikan" value="SMK" />
-              <x-info label="Freelance" value="Tersedia" />
+          <div class="col-lg-8">
+            <div class="about-card">
+              <p>Saya adalah seorang <strong>Fullstack Developer</strong> yang terbiasa bekerja dengan
+                <strong>Laravel</strong> di sisi backend dan membangun antarmuka yang responsif di frontend. Saya
+                mengedepankan efisiensi, performa, dan estetika dalam setiap proyek.</p>
+              <p>Dengan dasar di bidang UI/UX, saya memperhatikan pengalaman pengguna — mulai dari sistem sederhana,
+                dashboard admin, hingga landing page bisnis yang menarik.</p>
+              <div class="info-grid">
+                <div class="info-item"><span class="label">Tanggal Lahir</span><span class="value">24 Juni 2007</span>
+                </div>
+                <div class="info-item"><span class="label">Email</span><span class="value"><a
+                      href="mailto:alfansyahwardhana@gmail.com">alfansyahwardhana@gmail.com</a></span></div>
+                <div class="info-item"><span class="label">Telepon</span><span class="value">+62 851 6101 8507</span>
+                </div>
+                <div class="info-item"><span class="label">Kota</span><span class="value">Makassar, Sulawesi
+                    Selatan</span></div>
+                <div class="info-item"><span class="label">Pendidikan</span><span class="value">SMK (Rekayasa Perangkat
+                    Lunak)</span></div>
+                <div class="info-item"><span class="label">Freelance</span><span class="value"
+                    style="color:#22c55e">&#10003; Tersedia</span></div>
+                <div class="info-item"><span class="label">GitHub</span><span class="value"><a
+                      href="https://github.com/Alfansyahwardana24juni"
+                      target="_blank">@Alfansyahwardana24juni</a></span></div>
+                <div class="info-item"><span class="label">LinkedIn</span><span class="value"><a
+                      href="https://www.linkedin.com/in/alfa-alfansyah-wardana-8953a02a9/" target="_blank">Alfansyah
+                      Wardhana</a></span></div>
+              </div>
             </div>
           </div>
         </div>
@@ -215,7 +250,7 @@
             <div class="progress">
               <span class="skill">JavaScript <i class="val">55%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
@@ -225,7 +260,7 @@
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill">PHP <i class="val">95%</i></span>
+              <span class="skill">PHP <i class="val">80%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -235,7 +270,7 @@
             <div class="progress">
               <span class="skill">Framer <i class="val">60%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
@@ -243,7 +278,7 @@
             <div class="progress">
               <span class="skill">Figma <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
@@ -254,6 +289,152 @@
 
       </div>
     </section><!-- End Skills Section -->
+
+
+    <!-- ======= Tech Stack Section ======= -->
+    <section id="techstack">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Tech Stack</h2>
+          <p>Teknologi yang saya kuasai dan gunakan sehari-hari</p>
+        </div>
+
+        <div class="row">
+          <!-- Languages -->
+          <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <p class="stack-category">Languages</p>
+            <div class="tech-badges">
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/php/777BB4" width="18"> PHP</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="18">
+                JavaScript</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/html5/E34F26" width="18"> HTML5</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/css3/1572B6" width="18"> CSS3</span>
+            </div>
+          </div>
+
+          <!-- Frameworks -->
+          <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="150">
+            <p class="stack-category">Frameworks &amp; Libraries</p>
+            <div class="tech-badges">
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/laravel/FF2D20" width="18"> Laravel</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/bootstrap/7952B3" width="18">
+                Bootstrap</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="18"> Tailwind
+                CSS</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/alpinedotjs/8BC0D0" width="18">
+                Alpine.js</span>
+            </div>
+          </div>
+
+          <!-- Database & Tools -->
+          <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <p class="stack-category">Database &amp; Tools</p>
+            <div class="tech-badges">
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/mysql/4479A1" width="18"> MySQL</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/git/F05032" width="18"> Git</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/github/ffffff" width="18"> GitHub</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/figma/F24E1E" width="18"> Figma</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/vercel/ffffff" width="18"> Vercel</span>
+              <span class="tech-badge"><img src="https://cdn.simpleicons.org/framer/0055FF" width="18"> Framer</span>
+            </div>
+          </div>
+
+          <!-- GitHub Stats -->
+          <div class="col-12 text-center mt-2" data-aos="fade-up" data-aos-delay="250">
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=Alfansyahwardana24juni&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f172a&title_color=3b82f6&icon_color=6366f1&text_color=e2e8f0"
+              alt="GitHub Stats"
+              style="max-width:460px; width:100%; border-radius:12px; border:1px solid rgba(255,255,255,0.08);" />
+          </div>
+        </div>
+      </div>
+    </section><!-- End Tech Stack Section -->
+
+
+    <!-- ======= Experience Section ======= -->
+    <section id="experience" class="section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Pengalaman</h2>
+          <p>Perjalanan karir dan proyek yang telah saya kerjakan</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+
+            <div class="exp-timeline">
+
+              <div class="exp-item" data-aos="fade-right" data-aos-delay="100">
+                <div class="exp-dot"></div>
+                <div class="exp-card">
+                  <div class="exp-header">
+                    <div>
+                      <h4>Freelance Web Developer</h4>
+                      <p class="exp-company"><i class="bx bx-buildings"></i> Self-employed</p>
+                    </div>
+                    <span class="exp-date">2023 &mdash; Sekarang</span>
+                  </div>
+                  <ul class="exp-list">
+                    <li>Membangun <strong>sadita.id</strong> &mdash; platform bisnis lengkap dengan Laravel + Admin
+                      Panel</li>
+                    <li>Mengembangkan <strong>landing page sekolah abuhurairah.id</strong> yang responsif</li>
+                    <li>Membangun sistem <strong>alumni-iqis.vercel.app</strong> berbasis web dengan fitur manajemen
+                      data</li>
+                    <li>Deploy berbagai proyek ke Vercel, cPanel, dan VPS</li>
+                  </ul>
+                  <div class="exp-tags">
+                    <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Tailwind CSS</span><span>Figma</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
+                <div class="exp-dot"></div>
+                <div class="exp-card">
+                  <div class="exp-header">
+                    <div>
+                      <h4>UI/UX &amp; Frontend Developer</h4>
+                      <p class="exp-company"><i class="bx bx-buildings"></i> Proyek Sekolah &amp; Komunitas</p>
+                    </div>
+                    <span class="exp-date">2022 &mdash; 2023</span>
+                  </div>
+                  <ul class="exp-list">
+                    <li>Merancang dan membangun <strong>Login Page Hotspot WiFi</strong> untuk SMK ITIBNU QAYYIM</li>
+                    <li>Membangun website <strong>Kopi NU</strong> sebagai latihan implementasi UI yang clean</li>
+                    <li>Membuat desain prototype di Figma sebelum implementasi ke kode</li>
+                  </ul>
+                  <div class="exp-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exp-item" data-aos="fade-right" data-aos-delay="300">
+                <div class="exp-dot"></div>
+                <div class="exp-card">
+                  <div class="exp-header">
+                    <div>
+                      <h4>Siswa RPL (Rekayasa Perangkat Lunak)</h4>
+                      <p class="exp-company"><i class="bx bx-book"></i> SMK Ibnu Qayyim, Makassar</p>
+                    </div>
+                    <span class="exp-date">2022 &mdash; Sekarang</span>
+                  </div>
+                  <ul class="exp-list">
+                    <li>Belajar dasar pemrograman web: HTML, CSS, PHP, JavaScript</li>
+                    <li>Mempelajari framework Laravel dan konsep MVC</li>
+                    <li>Aktif membangun proyek nyata sebagai portofolio</li>
+                  </ul>
+                  <div class="exp-tags">
+                    <span>PHP</span><span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Experience Section -->
 
 
     <!-- ======= Portfolio Section ======= -->
@@ -280,7 +461,8 @@
               <img src="assets/img/portfolio/1.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Website Sadita</h4>
-                <p>Web</p>
+                <p>Landing Page</p>
+                <p class="tech-stack">Laravel &bull; Tailwind CSS &bull; MySQL</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Website Kopi NU"><i class="bx bx-plus"></i></a>
@@ -296,7 +478,8 @@
               <img src="assets/img/portfolio/2.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Landing Page Sekolah Abuhurairah</h4>
-                <p>Web</p>
+                <p>Landing Page</p>
+                <p class="tech-stack">HTML &bull; CSS &bull; JavaScript</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Web Project 2"><i class="bx bx-plus"></i></a>
@@ -313,7 +496,8 @@
               <img src="assets/img/portfolio/3.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Web Circlan</h4>
-                <p>Web</p>
+                <p>Web App</p>
+                <p class="tech-stack">Laravel &bull; Bootstrap &bull; MySQL</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Web Project 3"><i class="bx bx-plus"></i></a>
@@ -328,8 +512,9 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/4.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web Kopi</h4>
-                <p>Web</p>
+                <h4>Web Kopi NU</h4>
+                <p>Landing Page</p>
+                <p class="tech-stack">HTML &bull; CSS &bull; JavaScript</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/4.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Web Project 4"><i class="bx bx-plus"></i></a>
@@ -345,8 +530,9 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/5.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web Login Page Hotspot</h4>
-                <p>Web</p>
+                <h4>Login Page Hotspot</h4>
+                <p>UI Page</p>
+                <p class="tech-stack">HTML &bull; CSS &bull; JavaScript</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/5.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Web Project 5"><i class="bx bx-plus"></i></a>
@@ -362,8 +548,9 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/6.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web Alumni Iqis</h4>
-                <p>Web</p>
+                <h4>Web Alumni IQIS</h4>
+                <p>Web App</p>
+                <p class="tech-stack">Laravel &bull; Tailwind CSS &bull; MySQL</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/6.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                     title="Web Project 6"><i class="bx bx-plus"></i></a>
@@ -387,104 +574,58 @@
 
         <div class="section-title">
           <h2>Layanan</h2>
-
         </div>
-
         <div class="row">
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
-                  </path>
-                </svg>
-                <i>🔧</i>
-              </div>
-              <h4><a href=""> Web Development Backend (Laravel)</a></h4>
-              <p>Pembuatan Halaman Admin Panel yang rapi, efisien, dan scalable</p>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxs-server"></i></div>
+              <h4>Backend Development (Laravel)</h4>
+              <p>Pembuatan Admin Panel yang rapi, efisien, dan scalable menggunakan Laravel + MySQL.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
             data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
-                  </path>
-                </svg>
-                <i>🎨</i>
-              </div>
-              <h4><a href="">Frontend Development</a></h4>
-              <p>Optimalisasi tampilan agar user-friendly di berbagai perangkat.</p>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-paint"></i></div>
+              <h4>Frontend Development</h4>
+              <p>Optimalisasi tampilan yang user-friendly dan responsif di berbagai perangkat.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
             data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
-                  </path>
-                </svg>
-                <i>🧠</i>
-              </div>
-              <h4><a href="">UI/UX Design (Dasar)</a></h4>
-              <p>meningkatkan user experience, tim berkolaborasi dalam merancang layout dan user flow yang intuitif
-                berdasarkan prinsip UI/UX sejak wireframing atau prototyping.</p>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-pencil"></i></div>
+              <h4>UI/UX Design</h4>
+              <p>Merancang layout dan user flow intuitif berdasarkan prinsip UI/UX sejak wireframing hingga prototyping.
+              </p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
-                  </path>
-                </svg>
-                <i>🔄</i>
-              </div>
-              <h4><a href="">Maintenance & Optimasi</a></h4>
-              <p>Pemeliharaan website meliputi perbaikan bug dan error handling, peningkatan performa (kecepatan &
-                keamanan), serta penambahan fitur sesuai permintaan klien.</p>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-wrench"></i></div>
+              <h4>Maintenance &amp; Optimasi</h4>
+              <p>Perbaikan bug, peningkatan performa &amp; keamanan, serta penambahan fitur sesuai kebutuhan klien.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
-                  </path>
-                </svg>
-                <i>🖥️</i>
-              </div>
-              <h4><a href=""> Pembuatan Landing Page Profesional</a></h4>
-              <p>Landing page promosi yang menarik dan responsif, dirancang sesuai kebutuhan klien (custom atau
-                referensi), dengan fokus pada CTA dan user experience.</p>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-window-alt"></i></div>
+              <h4>Landing Page Profesional</h4>
+              <p>Landing page promosi yang menarik dan responsif, custom sesuai kebutuhan klien dengan fokus pada CTA.
+              </p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
-                  </path>
-                </svg>
-                <i>🚀</i>
-              </div>
-              <h4><a href="">Deploy & Version Control</a></h4>
-              <p>Layanan deployment mencakup backup otomatis & rollback cepat, pengaturan domain kustom & SSL, serta
-                pilihan hosting di berbagai platform (VPS, shared, Vercel, Netlify, Cloud).</p>
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-github"></i></div>
+              <h4>Deploy &amp; Version Control</h4>
+              <p>Deployment ke berbagai platform (VPS, Vercel, Netlify, Cloud) dengan domain kustom &amp; SSL.</p>
             </div>
           </div>
 
@@ -508,20 +649,20 @@
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Indonesia,sulawesi-selatan ,makassar</p>
+                <h4>Lokasi</h4>
+                <p>Makassar, Sulawesi Selatan, Indonesia</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>alfansyahwardhana@gmail.com</p>
+                <h4>Email</h4>
+                <p><a href="mailto:alfansyahwardhana@gmail.com">alfansyahwardhana@gmail.com</a></p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+628 516 101 8507</p>
+                <h4>WhatsApp</h4>
+                <p><a href="https://wa.me/6285161018507" target="_blank">+62 851 6101 8507</a></p>
               </div>
 
             </div>
@@ -565,26 +706,20 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Alvansyah Wardhana</h3>
+      <h3>Alfansyah Wardhana</h3>
+      <p>Fullstack Developer &bull; Makassar, Indonesia</p>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/alfa-alfansyah-wardana-8953a02a9/" class="linkedin" target="_blank"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="#" class="facebook">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://www.instagram.com/alvansyahwardhana_/" class="instagram" target="_blank"><i
+        <a href="https://www.linkedin.com/in/alfa-alfansyah-wardana-8953a02a9/" class="linkedin" target="_blank"
+          title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Alfansyahwardana24juni" class="github" target="_blank" title="GitHub"><i
+            class="bx bxl-github"></i></a>
+        <a href="https://www.instagram.com/alvansyahwardhana_/" class="instagram" target="_blank" title="Instagram"><i
             class="bx bxl-instagram"></i></a>
-        <a href="https://wa.me/6285161018507" class="whatsapp" target="_blank">
-          <i class="bx bxl-whatsapp"></i>
-        </a>
+        <a href="https://wa.me/6285161018507" class="whatsapp" target="_blank" title="WhatsApp"><i
+            class="bx bxl-whatsapp"></i></a>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="#">AlvansyahWardhana</a>
-      </div>
+      <div class="credits">Designed &amp; Built by <a href="https://github.com/Alfansyahwardana24juni"
+          target="_blank">Alfansyah Wardhana</a></div>
     </div>
   </footer><!-- End Footer -->
 
@@ -605,6 +740,56 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Cursor Glow + Typed.js Init -->
+  <script>
+    // Cursor glow
+    const glow = document.getElementById('cursorGlow');
+    document.addEventListener('mousemove', (e) => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+
+    // Typed.js subtitle
+    if (typeof Typed !== 'undefined') {
+      new Typed('#typed-subtitle', {
+        strings: [
+          'Fullstack Developer',
+          'Laravel Specialist',
+          'UI/UX Enthusiast',
+          'Open to Opportunities'
+        ],
+        typeSpeed: 60,
+        backSpeed: 35,
+        backDelay: 1800,
+        loop: true
+      });
+    }
+
+    // Scroll animation for Experience Section
+    document.addEventListener("DOMContentLoaded", function () {
+      const expCards = document.querySelectorAll('.exp-card');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Element scrolled into view (from top or bottom)
+            entry.target.classList.add('slide-in');
+          } else {
+            // Element scrolled out of view - remove class so it animates again when scrolled back
+            entry.target.classList.remove('slide-in');
+          }
+        });
+      }, {
+        threshold: 0.1, // Trigger when 10% visible
+        rootMargin: "0px 0px -50px 0px"
+      });
+
+      expCards.forEach(card => {
+        observer.observe(card);
+      });
+    });
+  </script>
 
 </body>
 
