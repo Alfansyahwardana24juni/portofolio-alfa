@@ -1,0 +1,15 @@
+{
+  "name": "portofolio-alfa",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "serve": "^14.2.1"
+  }
+}
