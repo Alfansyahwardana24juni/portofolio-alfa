@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #fd4766;
+  background: #007bff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #fd4766;
+  background: #007bff;
   color: #fff;
 }
 
@@ -85,7 +85,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid#fd4766;
+  border: 6px solid#007bff;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -174,7 +174,9 @@ h6 {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: rgba(242, 243, 245, 0.4);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -211,7 +213,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background:#fd4766;
+  background:#007bff;
 }
 
 .nav-menu a:hover span,
@@ -265,7 +267,7 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: #fd4766;
+  background-color: #007bff;
 }
 
 /*--------------------------------------------------------------
@@ -277,6 +279,7 @@ h6 {
   background: url("../img/hero-bg.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
+  backdrop-filter: blur(5px);
 }
 
 @media (min-width: 992px) {
@@ -287,7 +290,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(45deg, rgba(10, 25, 47, 0.9) 0%, rgba(10, 25, 47, 0.7) 100%);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -300,18 +303,18 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #fff;
 }
 
 #hero p {
-  color: #45505b;
+  color: #fff;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-  color: #fd4766;
+  color: #007bff;
   letter-spacing: 1px;
 }
 
@@ -322,14 +325,14 @@ h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: #fff;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: #fd4766;
+  color: #007bff;
 }
 
 @media (max-width: 992px) {
@@ -389,7 +392,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #fd4766;
+  background: #007bff;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -424,7 +427,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color:#fd4766;
+  color:#007bff;
   line-height: 0;
 }
 
@@ -450,7 +453,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #fd4766;
+  background: #007bff;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
@@ -507,7 +510,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color:#fd4766;
+  background-color:#007bff;
 }
 
 /*--------------------------------------------------------------
@@ -524,7 +527,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #fd4766;
+  border-left: 2px solid #007bff;
   position: relative;
 }
 
@@ -534,7 +537,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fd4766;
+  color: #007bff;
   margin-bottom: 10px;
 }
 
@@ -568,7 +571,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid#fd4766;
+  border: 2px solid#007bff;
 }
 
 /*--------------------------------------------------------------
@@ -603,7 +606,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color:#fd4766;
+  color:#007bff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -703,7 +706,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #fd4766;
+  color: #007bff;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -749,11 +752,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #fd4766;
+  border: 1px solid #007bff;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fd4766;
+  background-color: #007bff;
 }
 
 .portfolio-details .portfolio-info {
@@ -800,8 +803,11 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  border-radius: 15px;
 }
 
 .services .icon-box .icon {
@@ -996,11 +1002,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #fd4766;
+  border: 1px solid #007bff;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fd4766;
+  background-color: #007bff;
 }
 
 @media (min-width: 992px) {
@@ -1019,7 +1025,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #fd4766;
+  color: #007bff;
   float: left;
   width: 44px;
   height: 44px;
@@ -1054,7 +1060,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #fd4766;
+  background: #007bff;
   color: #fff;
 }
 
@@ -1125,7 +1131,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #fd4766;
+  background: #007bff;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1181,7 +1187,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #fd4766;
+  background: #007bff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1195,7 +1201,7 @@ section {
 
 #footer .social-links a:hover {
   background: #FFF;
-  color: #fd4766;
+  color: #007bff;
   text-decoration: none;
 }
 
